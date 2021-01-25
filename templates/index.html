@@ -8,15 +8,13 @@
     <link rel="stylesheet" href="/static/css/all.min.css">
     <link rel="stylesheet" href="/static/css/mdb.min.css">
     <link rel="icon" type="image/png" href="/static/images/logo.png" />
-    <link
-  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-  rel="stylesheet"
-/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <!-- jQuery library -->
     <script src="/static/js/jquery.min.js"></script>
     <script src="/static/js/mdb.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="/static/js/bootstrap.min.js"></script>
+    
 </head>
 
 <body>
@@ -29,7 +27,8 @@
     <div class="content">
         <div class="container">
             <div class=" text-center bg-light">
-                <img src="https://camerasaigon24h.com/hinh/Nh%E1%BB%AFng-l%E1%BB%97i-kh%C3%B4ng-xem-%C4%91%C6%B0%E1%BB%A3c-camera-quan-s%C3%A1t-v%C3%A0-c%C3%A1ch-kh%E1%BA%AFc-ph%E1%BB%A5c-2.png">
+                <img src="https://camerasaigon24h.com/hinh/Nh%E1%BB%AFng-l%E1%BB%97i-kh%C3%B4ng-xem-%C4%91%C6%B0%E1%BB%A3c-camera-quan-s%C3%A1t-v%C3%A0-c%C3%A1ch-kh%E1%BA%AFc-ph%E1%BB%A5c-2.png"
+                    style="max-height: 400px;">
             </div>
             <div class="row">
                 <div class="col-sm-4">
@@ -39,7 +38,8 @@
                         </div>
                         <ul class="list-group list-group-flush">
                             <div class="form-check form-switch">
-                                <label class="form-check-label" for="flexSwitchCheckDefault">Tự động tránh vật cán</label>
+                                <label class="form-check-label" for="flexSwitchCheckDefault">Tự động tránh vật
+                                    cán</label>
                                 <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
                             </div>
                             <div class="form-check form-switch">
@@ -50,21 +50,62 @@
                     </div>
                 </div>
                 <div class="col-sm-8">
-                    <div class="card border-primary mb-3" style="max-width: 30rem;">
-                        <div class="card-body text-primary">
-                            <input type="image" name="direction" src="https://www.clker.com/cliparts/2/9/c/f/11954229651703455648kuba_arrow_button_set_1.svg.hi.png" value="left" style="float:left; width:80% ;">
+
+
+                    <div class="board-controler" style="backgroudcolor:red;">
+                        <div class="inputcontrol">
+                            <input id="forwardbutton" type="image" name="forward" src="/static/images/forward.png"
+                                value="left" style=" width:15% ;">
                         </div>
+
+                        <div class="inputcontrol">
+                            <span>
+                                <input id="leftbutton" type="image" name="left" src="/static/images/left.png"
+                                    value="left" style=" width:15% ;">
+                            </span>
+                            <span>
+                                <input id="centerbutton" type="image" name="center" src="/static/images/start.png"
+                                    value="center" style=" width:15% ;">
+                            </span>
+                            <span>
+                                <input id="rightbutton" type="image" name="right" src="/static/images/right.png"
+                                    value="right" style=" width:15% ;">
+                            </span>
+
+                        </div>
+                        <div class="inputcontrol">
+                            <input type="image" id="backwardbutton" name="backward" src="/static/images/backward.png"
+                                value="left" style=" width:15% ;">
+                        </div>
+                        <p>Status: <span class="status" /><p></p>
+                        <!-- <table>
+                                <tr>
+                                    <td></td>
+                                    <td><input type="image" name="direction" src="/static/images/forward.png" value="left" style="float:left; width:20% ;"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td >  <input type="image" name="direction" src="/static/images/left.png" value="left" style="float:right; width:20% ;"></td>
+                                    <td> <input type="image" name="direction" src="/static/images/backward.png" value="left" style="float:left; width:20% ;"></td>
+                                    <td ><input type="image" name="direction" src="/static/images/right.png" value="left" style="float:left; width:20% ;"></td>
+                                </tr>
+                               
+                            </table> -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <footer class="bg-light text-center text-lg-start">
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        <div class="text-center " style="background-color: rgba(0, 0, 0, 0.2)">
             © 2021 Create by HaoNH
         </div>
-        <!-- Copyright -->
     </footer>
+    <script src="/static/js/main.js"></script>
+    <script>
+        
+       
+    </script>
 </body>
 
 </html>
